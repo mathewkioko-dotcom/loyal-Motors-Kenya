@@ -1,0 +1,145 @@
+body{
+   
+   margin: 0%;
+   background-image: url("images/emoj2.jpg");
+   margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+
+.bgVideo-bg {
+   
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.bgVideo-bg video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.content-container{
+    position: relative;
+}
+header {
+    background-image: url("images/luxury.jpg");
+    padding: 1rem;
+    border-bottom: 2px solid yellow; 
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: yellow;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 25px;
+    padding: 40px;
+    background-color: linear-gradient(to bottom, #0D0D0D, #1C1C1E)
+}
+
+
+.car-card {
+    background-color: orange;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    border-color: yellow;
+}
+
+.car-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+button {
+    background-color: black;
+    color: yellow;
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: white;
+}
+
+form {
+    max-width: 400px;
+    margin: 40px auto;
+    background: grey;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: white;
+    color: #0a0101;
+    box-sizing: border-box; 
+}
+
+
+@media (max-width: 600px) {
+    .car-grid {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+    }
+    
+    h1 { font-size: 1.5rem; }
+}
+.close-btn {
+    background: #444;
+    color: red;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px;
+    border: none;
+}
+.close-btn:hover { background: rgb(2, 2, 2); }

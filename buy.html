@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout | Elite Supercars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <vidio autoplay muted loop id="bgVideo">
+            <source src="video/video.mp4.mp4" type="video/mp4">
+        </vidio>
+        
+    
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Showroom</a>
+            <a href="about.html">About Us</a>
+            <a href="garage.html">My Garage</a>
+            <a href="buy.html">Checkout</a>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <section id="checkout-section">
+            <h1 style="color: black; text-align: center;">Finalize Your Purchase</h1>
+            
+            
+            
+            <div id="checkoutPreview" class="summary-box" style="margin-bottom: 30px;">
+                <p style="text-align: center; color: #888;">Loading your selection...</p>
+            </div>
+
+            
+            <form id="purchaseForm">
+                <div class="form-group">
+                    <label for="email">Contact Email</label>
+                    <input type="email" id="email" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="card">Credit Card Number</label>
+                    <input type="text" id="card" placeholder="1234 5678 1234 5678" maxlength="16" pattern="\d{16}" title="Please enter 16 digits" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" placeholder="Enter your country" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred Delivery Date</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <button type="submit" id="confirmBtn">Confirm & Buy Now</button>
+                <p style="text-align: center; font-size: 0.8rem; color: #666; margin-top: 10px;">
+                    Secure 256-bit SSL Encryption
+                </p>
+            </form>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p style="color: black;">&copy; 2026 @| LOYAL MOTORS KENYA</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
